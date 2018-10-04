@@ -1,0 +1,14 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.
+dbThumbs.db
+ 
+# Files too big for github #
+############################
+Datasets/order_products__prior.csv
+Datasets/orders.csv

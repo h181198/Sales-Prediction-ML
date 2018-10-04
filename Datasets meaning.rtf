@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica-Oblique;
+\f3\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Datasets Meaning:\
+\
+
+\f1\b Ailes.csv
+\f0\b0 \
+Pretty selfexplanatory, maps ids to the aile type.\
+\
+
+\f1\b Deparments.csv\
+
+\f0\b0 Pretty selfexplanatory aswell, maps an id to departments, like type of food/ frozen, bakery, other.\
+\
+
+\f1\b Order_products__prior.csv and order_products__train.csv\
+
+\f0\b0 These datasets specify which products were purchased in each order. 
+\f2\i order_products__prior.csv 
+\f0\i0 contains previous order contents for all customers. \'91reordered\'92 indicates that the customer has previous order that contains the product. Note that some orders will have no reordered items. You may predict an explicit \'91None\'92 value for orders with no reordered items.\
+\
+
+\f1\b Orders.csv\
+
+\f0\b0 The file tells to which set (prior, train, test) an order belongs. You are predicting reordered items only for the test set orders. \'91order_dow\'92 is day of the week.\
+\
+
+\f1\b Products.csv\
+
+\f0\b0 product id, product name, ailse id and department id. So maps a product id to a name and an aile and department\
+\
+\
+
+\f3\i\b Evaluation
+\f0\i0\b0 \
+For each order_id in the test set, you should predict a space-delimited list of prodict_ids for that order. If you wish to predict an empty order, you should submit an explicit \'91None\'92 value. You may combine \'91None\'92 with product_ids. The spelling of \'91None! is case sensitive in the scoring metric. The file should have a header and look like the following:\
+order_id, products\
+17, 1 2\
+34, None\
+137, 1 2 3\
+etc.}
